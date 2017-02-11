@@ -284,7 +284,7 @@
         
         <!-- Leave this xsl:message here, for some reason it triggers something that causes ixsl:schedule-action
              to have effect. Without it, the figure appears in one time on the page. -->
-        <xsl:message select="'oldShape=' || $oldShape || ', newShape=' || $newShape"/>
+        <!--<xsl:message select="'oldShape=' || $oldShape || ', newShape=' || $newShape"/>-->
         
         <xsl:variable name="oldTransforms" as="element(transform)+" select="$transforms-map($oldShape)"/>
         <xsl:variable name="newTransforms" as="element(transform)+" select="$transforms-map($newShape)"/>
