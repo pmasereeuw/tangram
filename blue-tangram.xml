@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tangramsettings>
+    <fill-colours>
+        <colour for-id="big-triangle-1">blue</colour>
+        <colour for-id="big-triangle-2">blue</colour>
+        <colour for-id="medium-triangle">blue</colour>
+        <colour for-id="small-triangle-1">blue</colour>
+        <colour for-id="small-triangle-2">blue</colour>
+        <colour for-id="square">blue</colour>
+        <colour for-id="parallelogram">blue</colour>
+    </fill-colours>
+    <stroke-colours>
+        <colour for-id="big-triangle-1">yellow</colour>
+        <colour for-id="big-triangle-2">yellow</colour>
+        <colour for-id="medium-triangle">yellow</colour>
+        <colour for-id="small-triangle-1">yellow</colour>
+        <colour for-id="small-triangle-2">yellow</colour>
+        <colour for-id="square">yellow</colour>
+        <colour for-id="parallelogram">yellow</colour>
+    </stroke-colours>
+</tangramsettings>

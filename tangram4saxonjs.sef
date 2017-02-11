@@ -1,0 +1,3545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://ns.saxonica.com/xslt/export" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vv="http://saxon.sf.net/generated-variable" xmlns:java-type="http://saxon.sf.net/java-type" version="30" packageVersion="1" saxonVersion="9.7.0.14" timeStamp="2017-02-11T00:39:27.654+01:00" target="JS">
+ <co id="0" binds="1 1 1 1 2 3 3 3 3 4 4 5 6">
+  <globalVariable name="Q{}runner-transforms" type="element(Q{}transform)+" line="210" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="function test(item) {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1;};return a()&amp;&amp;b();};return a()&amp;&amp;b();};if (test(val)) {return val;} else {throw SaxonJS.XError('Conversion failed', 'XTTE0590');}" jsCardCheck="function c(n) {return n&gt;=1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="211" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="3|0|XTTE0570|runner-transforms">
+    <sequence>
+     <elem name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="-135"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="0"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="1"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="212" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="51"/>
+       </att>
+       <att name="translate-y">
+        <str val="90"/>
+       </att>
+       <att name="rotate-r">
+        <str val="45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="2"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="3"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="213" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="medium-triangle"/>
+       </att>
+       <att name="translate-x">
+        <str val="-40"/>
+       </att>
+       <att name="translate-y">
+        <str val="211"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <str val="0"/>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="4"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="214" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="-37"/>
+       </att>
+       <att name="translate-y">
+        <str val="350"/>
+       </att>
+       <att name="rotate-r">
+        <str val="180"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="5"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="6"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="215" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="320"/>
+       </att>
+       <att name="translate-y">
+        <str val="260"/>
+       </att>
+       <att name="rotate-r">
+        <str val="90"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="7"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="8"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="216" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="square"/>
+       </att>
+       <att name="translate-x">
+        <str val="-20"/>
+       </att>
+       <att name="translate-y">
+        <str val="-140"/>
+       </att>
+       <att name="rotate-r">
+        <str val="30"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="9"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="10"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="217" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="parallelogram"/>
+       </att>
+       <att name="translate-x">
+        <str val="-320"/>
+       </att>
+       <att name="translate-y">
+        <str val="210"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-x" bSlot="11"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-y" bSlot="12"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="-1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+    </sequence>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="7" binds="">
+  <globalVariable name="Q{}doubleShortSide" type="xs:integer" line="70" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.integer.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <int val="200"/>
+  </globalVariable>
+ </co>
+ <co id="8" vis="PUBLIC" binds="">
+  <globalParam name="Q{}viewBoxFactor" type="xs:string" line="0" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <str val="1.0"/>
+  </globalParam>
+ </co>
+ <co id="1" binds="7">
+  <globalVariable name="Q{}big-triangle-center" type="xs:double" line="76" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <convert vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="76" from="xs:decimal" to="xs:double" flags="p">
+    <arith op="div" calc="i/i">
+     <gVarRef name="Q{}doubleShortSide" bSlot="0"/>
+     <int val="4"/>
+    </arith>
+   </convert>
+  </globalVariable>
+ </co>
+ <co id="9" vis="PUBLIC" binds="">
+  <globalParam name="Q{}svgCSSHeight" type="item()*" line="0" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
+   <str val="100%"/>
+  </globalParam>
+ </co>
+ <co id="10" binds="11 1 1 11 1 1 2 2 3 3 3 3 4 4 5 6">
+  <globalVariable name="Q{}tangram-transforms" type="element(Q{}transform)+" line="169" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="function test(item) {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1;};return a()&amp;&amp;b();};return a()&amp;&amp;b();};if (test(val)) {return val;} else {throw SaxonJS.XError('Conversion failed', 'XTTE0590');}" jsCardCheck="function c(n) {return n&gt;=1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="170" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="3|0|XTTE0570|tangram-transforms">
+    <sequence>
+     <elem name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <convert from="xs:double" to="xs:string">
+         <arith op="div" calc="d/d">
+          <minus>
+           <gVarRef name="Q{}singleLongSide" bSlot="0"/>
+          </minus>
+          <int val="2"/>
+         </arith>
+        </convert>
+       </att>
+       <att name="rotate-r">
+        <str val="-135"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="1"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="2"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="171" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <fn name="concat">
+         <convert from="xs:double" to="xs:string">
+          <arith op="div" calc="d/d">
+           <minus>
+            <gVarRef name="Q{}singleLongSide" bSlot="3"/>
+           </minus>
+           <int val="2"/>
+          </arith>
+         </convert>
+         <str val=" "/>
+        </fn>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="135"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="4"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="5"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="172" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="medium-triangle"/>
+       </att>
+       <att name="translate-x">
+        <str val="121"/>
+       </att>
+       <att name="translate-y">
+        <str val="121"/>
+       </att>
+       <att name="rotate-r">
+        <str val="180"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="6"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="7"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="173" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="-45"/>
+       </att>
+       <att name="translate-y">
+        <str val="131"/>
+       </att>
+       <att name="rotate-r">
+        <str val="45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="8"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="9"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="174" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="60"/>
+       </att>
+       <att name="translate-y">
+        <str val="25"/>
+       </att>
+       <att name="rotate-r">
+        <str val="-45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="10"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="11"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="175" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="square"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="71"/>
+       </att>
+       <att name="rotate-r">
+        <str val="45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="12"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="13"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="176" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="parallelogram"/>
+       </att>
+       <att name="translate-x">
+        <str val="56"/>
+       </att>
+       <att name="translate-y">
+        <str val="-35"/>
+       </att>
+       <att name="rotate-r">
+        <str val="-45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-x" bSlot="14"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-y" bSlot="15"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+    </sequence>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="11" binds="12">
+  <globalVariable name="Q{}singleLongSide" type="xs:double" line="71" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <arith vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="71" op="*" calc="d*d">
+    <int val="100"/>
+    <gVarRef name="Q{}SQRT2" bSlot="0"/>
+   </arith>
+  </globalVariable>
+ </co>
+ <co id="13" vis="PUBLIC" binds="">
+  <globalParam name="Q{}idOfTangramDiv" type="item()*" line="0" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
+   <str val="tangram-div"/>
+  </globalParam>
+ </co>
+ <co id="14" binds="1 1 1 1 2 3 3 3 3 4 4 5 6">
+  <globalVariable name="Q{}zero-transforms" type="element(Q{}transform)+" line="159" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="function test(item) {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1;};return a()&amp;&amp;b();};return a()&amp;&amp;b();};if (test(val)) {return val;} else {throw SaxonJS.XError('Conversion failed', 'XTTE0590');}" jsCardCheck="function c(n) {return n&gt;=1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="160" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="3|0|XTTE0570|zero-transforms">
+    <sequence>
+     <elem name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="0"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="1"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="161" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="2"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="3"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="162" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="medium-triangle"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <str val="0"/>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="4"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="163" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="5"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="6"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="164" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="7"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="8"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="165" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="square"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="9"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="10"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="166" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="parallelogram"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-x" bSlot="11"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-y" bSlot="12"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+    </sequence>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="15" vis="PUBLIC" binds="">
+  <globalParam name="Q{}keyForPreviousFangram" type="item()*" line="0" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
+   <str val="tangramtransforms"/>
+  </globalParam>
+ </co>
+ <co id="16" binds="16 17 18">
+  <mode name="Q{}colourify" onNo="TC" flags="W" patternSlots="0">
+   <templateRule prec="0" prio="-0.5" seq="0" rank="0" minImp="0" slots="0" flags="os" line="468" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt">
+    <p.nodeTest role="match" test="attribute()" jsTest="return SaxonJS.U.isAttr(item)"/>
+    <copy role="action" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="470" flags="cin">
+     <applyT role="content" mode="Q{}colourify" bSlot="0">
+      <sequence role="select">
+       <axis name="attribute" nodeTest="attribute()" jsTest="return SaxonJS.U.isAttr(item)"/>
+       <axis name="child" nodeTest="( element() | text() | comment() | processing-instruction() )" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==1 || item.nodeType==3 || item.nodeType==7 || item.nodeType==8);"/>
+      </sequence>
+     </applyT>
+    </copy>
+   </templateRule>
+   <templateRule prec="0" prio="0.5" seq="2" rank="1" minImp="0" slots="2" flags="os" line="482" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt">
+    <p.withPredicate role="match">
+     <p.nodeTest test="attribute(Q{}stroke)" jsTest="return SaxonJS.U.isAttr(item) &amp;&amp; item.name=='stroke'"/>
+     <slash vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="482">
+      <axis name="parent" nodeTest="(document-node()|element())" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==9||item.nodeType==11||item.nodeType==1);"/>
+      <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+     </slash>
+    </p.withPredicate>
+    <sequence role="action" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="483">
+     <param name="settings" slot="0" flags="ti" as="document-node()">
+      <treat role="conversion" as="document-node()" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==9||item.nodeType==11);" diag="8|0|XTTE0590|settings">
+       <check card="1" diag="8|0|XTTE0590|settings">
+        <supplied slot="0"/>
+       </check>
+      </treat>
+     </param>
+     <let line="485" var="colour" as="xs:string?" slot="1" eval="7">
+      <ufCall name="Q{http://www.masereeuw.nl/tangram}get-stroke-colour-for-id" tailCall="false" bSlot="1" eval="6 7">
+       <varRef name="settings" slot="0"/>
+       <check card="1" diag="0|1||tangram:get-stroke-colour-for-id">
+        <cvUntyped to="xs:string">
+         <data>
+          <check line="484" card="?" diag="3|0|XTTE0570|id">
+           <slash>
+            <axis name="parent" nodeTest="(document-node()|element())" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==9||item.nodeType==11||item.nodeType==1);"/>
+            <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+           </slash>
+          </check>
+         </data>
+        </cvUntyped>
+       </check>
+      </ufCall>
+      <att line="486" name="stroke">
+       <fn name="string-join">
+        <convert from="xs:anyAtomicType" to="xs:string">
+         <choose>
+          <varRef name="colour" slot="1"/>
+          <varRef name="colour" slot="1"/>
+          <true/>
+          <data>
+           <dot type="attribute(Q{}stroke)"/>
+          </data>
+         </choose>
+        </convert>
+        <str val=" "/>
+       </fn>
+      </att>
+     </let>
+    </sequence>
+   </templateRule>
+   <templateRule prec="0" prio="0.5" seq="1" rank="1" minImp="0" slots="2" flags="os" line="474" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt">
+    <p.withPredicate role="match">
+     <p.nodeTest test="attribute(Q{}fill)" jsTest="return SaxonJS.U.isAttr(item) &amp;&amp; item.name=='fill'"/>
+     <slash vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="474">
+      <axis name="parent" nodeTest="(document-node()|element())" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==9||item.nodeType==11||item.nodeType==1);"/>
+      <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+     </slash>
+    </p.withPredicate>
+    <sequence role="action" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="475">
+     <param name="settings" slot="0" flags="ti" as="document-node()">
+      <treat role="conversion" as="document-node()" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==9||item.nodeType==11);" diag="8|0|XTTE0590|settings">
+       <check card="1" diag="8|0|XTTE0590|settings">
+        <supplied slot="0"/>
+       </check>
+      </treat>
+     </param>
+     <let line="478" var="colour" as="xs:string?" slot="1" eval="7">
+      <ufCall name="Q{http://www.masereeuw.nl/tangram}get-fill-colour-for-id" tailCall="false" bSlot="2" eval="6 7">
+       <varRef name="settings" slot="0"/>
+       <check card="1" diag="0|1||tangram:get-fill-colour-for-id">
+        <cvUntyped to="xs:string">
+         <data>
+          <check line="477" card="?" diag="3|0|XTTE0570|id">
+           <slash>
+            <axis name="parent" nodeTest="(document-node()|element())" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==9||item.nodeType==11||item.nodeType==1);"/>
+            <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+           </slash>
+          </check>
+         </data>
+        </cvUntyped>
+       </check>
+      </ufCall>
+      <att line="479" name="fill">
+       <fn name="string-join">
+        <convert from="xs:anyAtomicType" to="xs:string">
+         <choose>
+          <varRef name="colour" slot="1"/>
+          <varRef name="colour" slot="1"/>
+          <true/>
+          <data>
+           <dot type="attribute(Q{}fill)"/>
+          </data>
+         </choose>
+        </convert>
+        <str val=" "/>
+       </fn>
+      </att>
+     </let>
+    </sequence>
+   </templateRule>
+   <templateRule prec="0" prio="-0.5" seq="0" rank="0" minImp="0" slots="0" flags="os" line="468" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt">
+    <p.nodeTest role="match" test="( element() | text() | comment() | processing-instruction() )" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==1 || item.nodeType==3 || item.nodeType==7 || item.nodeType==8);"/>
+    <copy role="action" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="470" flags="cin">
+     <applyT role="content" mode="Q{}colourify" bSlot="0">
+      <sequence role="select">
+       <axis name="attribute" nodeTest="attribute()" jsTest="return SaxonJS.U.isAttr(item)"/>
+       <axis name="child" nodeTest="( element() | text() | comment() | processing-instruction() )" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==1 || item.nodeType==3 || item.nodeType==7 || item.nodeType==8);"/>
+      </sequence>
+     </applyT>
+    </copy>
+   </templateRule>
+  </mode>
+ </co>
+ <co id="19" binds="10 10 10 10 20 21 22 0 23">
+  <globalVariable name="Q{}transforms-map" type="map(xs:string, element(Q{}transform)+)" line="235" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="if (typeof val == 'object') {return val;} else {throw SaxonJS.XError('Cannot convert supplied JS value to a map or array');}" jsCardCheck="function c(n) {return n==1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="237" as="map(xs:string, element(Q{}transform)+)" jsTest="function k(item) {return SaxonJS.U.Atomic.string.matches(item);};function v(item) {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function c(n) {return n&gt;=1;};return SaxonJS.U.isMap(item) &amp;&amp; item.conforms(k, v, c);" diag="3|0|XTTE0570|transforms-map">
+    <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:create" type="map(*)">
+     <sequence>
+      <ifCall name="map:entry" type="map(*)">
+       <str val="black-tangram"/>
+       <gVarRef name="Q{}tangram-transforms" bSlot="0"/>
+      </ifCall>
+      <ifCall line="238" name="map:entry" type="map(*)">
+       <str val="coloured-tangram"/>
+       <gVarRef name="Q{}tangram-transforms" bSlot="1"/>
+      </ifCall>
+      <ifCall line="239" name="map:entry" type="map(*)">
+       <str val="blue-tangram"/>
+       <gVarRef name="Q{}tangram-transforms" bSlot="2"/>
+      </ifCall>
+      <ifCall line="240" name="map:entry" type="map(*)">
+       <str val="transparant-tangram"/>
+       <gVarRef name="Q{}tangram-transforms" bSlot="3"/>
+      </ifCall>
+      <ifCall line="241" name="map:entry" type="map(*)">
+       <str val="sitting-cat-tangram"/>
+       <gVarRef name="Q{}sitting-cat-transforms" bSlot="4"/>
+      </ifCall>
+      <ifCall line="242" name="map:entry" type="map(*)">
+       <str val="bird-tangram"/>
+       <gVarRef name="Q{}bird-transforms" bSlot="5"/>
+      </ifCall>
+      <ifCall line="243" name="map:entry" type="map(*)">
+       <str val="tux-tangram"/>
+       <gVarRef name="Q{}tux-transforms" bSlot="6"/>
+      </ifCall>
+      <ifCall line="244" name="map:entry" type="map(*)">
+       <str val="runner-tangram"/>
+       <gVarRef name="Q{}runner-transforms" bSlot="7"/>
+      </ifCall>
+      <ifCall line="245" name="map:entry" type="map(*)">
+       <str val="arrow-tangram"/>
+       <gVarRef name="Q{}arrow-transforms" bSlot="8"/>
+      </ifCall>
+     </sequence>
+    </ifCall>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="22" binds="11 1 1 1 1 2 3 3 3 3 4 4 5 6">
+  <globalVariable name="Q{}tux-transforms" type="element(Q{}transform)+" line="200" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="function test(item) {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1;};return a()&amp;&amp;b();};return a()&amp;&amp;b();};if (test(val)) {return val;} else {throw SaxonJS.XError('Conversion failed', 'XTTE0590');}" jsCardCheck="function c(n) {return n&gt;=1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="201" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="3|0|XTTE0570|tux-transforms">
+    <sequence>
+     <elem name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}singleLongSide" bSlot="0"/>
+        </convert>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="1"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="2"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="202" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="161"/>
+       </att>
+       <att name="translate-y">
+        <str val="152"/>
+       </att>
+       <att name="rotate-r">
+        <str val="-45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="3"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="4"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="203" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="medium-triangle"/>
+       </att>
+       <att name="translate-x">
+        <str val="213"/>
+       </att>
+       <att name="translate-y">
+        <str val="290"/>
+       </att>
+       <att name="rotate-r">
+        <str val="45"/>
+       </att>
+       <att name="rotate-x">
+        <str val="0"/>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="5"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="204" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="80"/>
+       </att>
+       <att name="translate-y">
+        <str val="-36"/>
+       </att>
+       <att name="rotate-r">
+        <str val="-45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="6"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="7"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="205" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="-26"/>
+       </att>
+       <att name="translate-y">
+        <str val="-72"/>
+       </att>
+       <att name="rotate-r">
+        <str val="45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="8"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="9"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="206" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="square"/>
+       </att>
+       <att name="translate-x">
+        <str val="20"/>
+       </att>
+       <att name="translate-y">
+        <str val="-133"/>
+       </att>
+       <att name="rotate-r">
+        <str val="-45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="10"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="11"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="207" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="parallelogram"/>
+       </att>
+       <att name="translate-x">
+        <str val="-205"/>
+       </att>
+       <att name="translate-y">
+        <str val="44"/>
+       </att>
+       <att name="rotate-r">
+        <str val="135"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-x" bSlot="12"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-y" bSlot="13"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="-1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+    </sequence>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="20" binds="7 1 1 7 1 1 7 2 2 3 3 3 3 4 4 7 5 6">
+  <globalVariable name="Q{}sitting-cat-transforms" type="element(Q{}transform)+" line="179" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="function test(item) {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1;};return a()&amp;&amp;b();};return a()&amp;&amp;b();};if (test(val)) {return val;} else {throw SaxonJS.XError('Conversion failed', 'XTTE0590');}" jsCardCheck="function c(n) {return n&gt;=1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="180" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="3|0|XTTE0570|sitting-cat-transforms">
+    <sequence>
+     <elem name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <convert from="xs:integer" to="xs:string">
+         <gVarRef name="Q{}doubleShortSide" bSlot="0"/>
+        </convert>
+       </att>
+       <att name="rotate-r">
+        <str val="-90"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="1"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="2"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="181" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="102"/>
+       </att>
+       <att name="translate-y">
+        <convert from="xs:integer" to="xs:string">
+         <arith op="*" calc="i*i">
+          <gVarRef name="Q{}doubleShortSide" bSlot="3"/>
+          <int val="2"/>
+         </arith>
+        </convert>
+       </att>
+       <att name="rotate-r">
+        <str val="180"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="4"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="5"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="182" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="medium-triangle"/>
+       </att>
+       <att name="translate-x">
+        <str val="65"/>
+       </att>
+       <att name="translate-y">
+        <convert from="xs:decimal" to="xs:string">
+         <arith op="*" calc="c*c">
+          <gVarRef name="Q{}doubleShortSide" bSlot="6"/>
+          <dec val="1.58"/>
+         </arith>
+        </convert>
+       </att>
+       <att name="rotate-r">
+        <str val="225"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="7"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="8"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="183" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="-18.867924528301886792"/>
+       </att>
+       <att name="translate-y">
+        <str val="-20"/>
+       </att>
+       <att name="rotate-r">
+        <str val="135"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="9"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="10"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="184" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="50"/>
+       </att>
+       <att name="translate-y">
+        <str val="-20"/>
+       </att>
+       <att name="rotate-r">
+        <str val="-45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="11"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="12"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="185" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="square"/>
+       </att>
+       <att name="translate-x">
+        <str val="-10"/>
+       </att>
+       <att name="translate-y">
+        <str val="25"/>
+       </att>
+       <att name="rotate-r">
+        <str val="45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="13"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="14"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="186" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="parallelogram"/>
+       </att>
+       <att name="translate-x">
+        <convert from="xs:integer" to="xs:string">
+         <gVarRef name="Q{}doubleShortSide" bSlot="15"/>
+        </convert>
+       </att>
+       <att name="translate-y">
+        <str val="400"/>
+       </att>
+       <att name="rotate-r">
+        <str val="360"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-x" bSlot="16"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-y" bSlot="17"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+    </sequence>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="23" binds="1 1 1 1 2 3 3 3 3 4 4 5 6">
+  <globalVariable name="Q{}arrow-transforms" type="element(Q{}transform)+" line="220" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="function test(item) {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1;};return a()&amp;&amp;b();};return a()&amp;&amp;b();};if (test(val)) {return val;} else {throw SaxonJS.XError('Conversion failed', 'XTTE0590');}" jsCardCheck="function c(n) {return n&gt;=1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="221" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="3|0|XTTE0570|arrow-transforms">
+    <sequence>
+     <elem name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="99"/>
+       </att>
+       <att name="translate-y">
+        <str val="200"/>
+       </att>
+       <att name="rotate-r">
+        <str val="45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="0"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="1"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="222" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="11"/>
+       </att>
+       <att name="translate-y">
+        <str val="112"/>
+       </att>
+       <att name="rotate-r">
+        <str val="135"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="2"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="3"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="223" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="medium-triangle"/>
+       </att>
+       <att name="translate-x">
+        <str val="115"/>
+       </att>
+       <att name="translate-y">
+        <str val="60"/>
+       </att>
+       <att name="rotate-r">
+        <str val="-135"/>
+       </att>
+       <att name="rotate-x">
+        <str val="0"/>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="4"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="224" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="240"/>
+       </att>
+       <att name="translate-y">
+        <str val="120"/>
+       </att>
+       <att name="rotate-r">
+        <str val="90"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="5"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="6"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="225" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="140"/>
+       </att>
+       <att name="translate-y">
+        <str val="70"/>
+       </att>
+       <att name="rotate-r">
+        <str val="180"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="7"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="8"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="226" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="square"/>
+       </att>
+       <att name="translate-x">
+        <str val="190"/>
+       </att>
+       <att name="translate-y">
+        <str val="20"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="9"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}square-center" bSlot="10"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="227" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="parallelogram"/>
+       </att>
+       <att name="translate-x">
+        <str val="140"/>
+       </att>
+       <att name="translate-y">
+        <str val="170"/>
+       </att>
+       <att name="rotate-r">
+        <str val="90"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-x" bSlot="11"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-y" bSlot="12"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+    </sequence>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="24" binds="16 25 25 26 25 11 27 25 28 25 25 29 30 30 31 32 33 34 32 33 35 32 33 32 33 32 33 32 33 36 32 33">
+  <function name="Q{http://www.masereeuw.nl/tangram}get-initial-tangram" line="81" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" eval="7" flags="pU" as="element(Q{http://www.w3.org/2000/svg}svg)" slots="5">
+   <arg name="settings" as="document-node()"/>
+   <treat role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="137" as="element(Q{http://www.w3.org/2000/svg}svg)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri=='http://www.w3.org/2000/svg'&amp;&amp;q.local=='svg';" diag="5|0|XTTE0780|tangram:get-initial-tangram">
+    <check card="1" diag="5|0|XTTE0780|tangram:get-initial-tangram">
+     <applyT mode="Q{}colourify" bSlot="0">
+      <doc role="select" line="86" base="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" validation="preserve">
+       <elem ns="=http://www.w3.org/2000/svg xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" name="svg" nsuri="http://www.w3.org/2000/svg" flags="d" namespaces="=http://www.w3.org/2000/svg svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+        <sequence>
+         <att name="viewBox">
+          <fn name="concat">
+           <str val="0 0 "/>
+           <convert from="xs:double" to="xs:string">
+            <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="84" name="Q{http://saxon.sf.net/generated-variable}gg1515365964" bSlot="1"/>
+           </convert>
+           <str val=" "/>
+           <convert from="xs:double" to="xs:string">
+            <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="84" name="Q{http://saxon.sf.net/generated-variable}gg1515365964" bSlot="2"/>
+           </convert>
+          </fn>
+         </att>
+         <att name="style">
+          <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" name="Q{http://saxon.sf.net/generated-variable}gg107625565" bSlot="3"/>
+         </att>
+         <let line="88" var="viewboxShift" as="xs:double" slot="1" eval="7">
+          <arith op="-" calc="d-d">
+           <arith op="div" calc="d/d">
+            <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="84" name="Q{http://saxon.sf.net/generated-variable}gg1515365964" bSlot="4"/>
+            <int val="2"/>
+           </arith>
+           <gVarRef name="Q{}singleLongSide" bSlot="5"/>
+          </arith>
+          <sequence line="90">
+           <choose>
+            <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" name="Q{http://saxon.sf.net/generated-variable}gg1175002195" bSlot="6"/>
+            <let line="92" var="cellSize" as="xs:double" slot="2" eval="7">
+             <arith op="div" calc="d/d">
+              <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="84" name="Q{http://saxon.sf.net/generated-variable}gg1515365964" bSlot="7"/>
+              <gVarRef name="Q{}gridSize-as-int" bSlot="8"/>
+             </arith>
+             <let line="93" var="vv:loc799405357" as="xs:string" slot="3" eval="8">
+              <convert line="97" from="xs:double" to="xs:string">
+               <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="84" name="Q{http://saxon.sf.net/generated-variable}gg1515365964" bSlot="9"/>
+              </convert>
+              <let var="vv:loc1550323871" as="xs:string" slot="4" eval="8">
+               <convert line="94" from="xs:double" to="xs:string">
+                <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="84" name="Q{http://saxon.sf.net/generated-variable}gg1515365964" bSlot="10"/>
+               </convert>
+               <forEach>
+                <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" name="Q{http://saxon.sf.net/generated-variable}gg1653016014" bSlot="11"/>
+                <sequence line="94">
+                 <elem name="line" nsuri="http://www.w3.org/2000/svg" flags="d" namespaces="=http://www.w3.org/2000/svg svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+                  <sequence>
+                   <att name="stroke">
+                    <gVarRef name="Q{}gridLineStroke" bSlot="12"/>
+                   </att>
+                   <att name="x1">
+                    <str val="0"/>
+                   </att>
+                   <att name="y1">
+                    <convert from="xs:double" to="xs:string">
+                     <arith op="*" calc="d*d">
+                      <dot type="xs:integer"/>
+                      <varRef name="cellSize" slot="2"/>
+                     </arith>
+                    </convert>
+                   </att>
+                   <att name="x2">
+                    <varRef line="93" name="vv:loc1550323871" slot="4"/>
+                   </att>
+                   <att name="y2">
+                    <convert from="xs:double" to="xs:string">
+                     <arith op="*" calc="d*d">
+                      <dot type="xs:integer"/>
+                      <varRef name="cellSize" slot="2"/>
+                     </arith>
+                    </convert>
+                   </att>
+                   <choose line="95">
+                    <compareToInt op="eq" val="0">
+                     <arith op="mod" calc="i%i">
+                      <dot type="xs:integer"/>
+                      <int val="5"/>
+                     </arith>
+                    </compareToInt>
+                    <att name="stroke-width">
+                     <str val="2"/>
+                    </att>
+                   </choose>
+                  </sequence>
+                 </elem>
+                 <elem line="97" name="line" nsuri="http://www.w3.org/2000/svg" flags="d" namespaces="=http://www.w3.org/2000/svg svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+                  <sequence>
+                   <att name="stroke">
+                    <gVarRef name="Q{}gridLineStroke" bSlot="13"/>
+                   </att>
+                   <att name="x1">
+                    <convert from="xs:double" to="xs:string">
+                     <arith op="*" calc="d*d">
+                      <dot type="xs:integer"/>
+                      <varRef name="cellSize" slot="2"/>
+                     </arith>
+                    </convert>
+                   </att>
+                   <att name="y1">
+                    <str val="0"/>
+                   </att>
+                   <att name="x2">
+                    <convert from="xs:double" to="xs:string">
+                     <arith op="*" calc="d*d">
+                      <dot type="xs:integer"/>
+                      <varRef name="cellSize" slot="2"/>
+                     </arith>
+                    </convert>
+                   </att>
+                   <att name="y2">
+                    <varRef line="93" name="vv:loc799405357" slot="3"/>
+                   </att>
+                   <choose line="98">
+                    <compareToInt op="eq" val="0">
+                     <arith op="mod" calc="i%i">
+                      <dot type="xs:integer"/>
+                      <int val="5"/>
+                     </arith>
+                    </compareToInt>
+                    <att name="stroke-width">
+                     <str val="2"/>
+                    </att>
+                   </choose>
+                  </sequence>
+                 </elem>
+                </sequence>
+               </forEach>
+              </let>
+             </let>
+            </let>
+           </choose>
+           <elem line="103" name="g" nsuri="http://www.w3.org/2000/svg" flags="d" namespaces="=http://www.w3.org/2000/svg svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+            <sequence>
+             <att name="transform">
+              <fn name="concat">
+               <str val="translate("/>
+               <convert from="xs:double" to="xs:string">
+                <varRef name="viewboxShift" slot="1"/>
+               </convert>
+               <str val=", "/>
+               <convert from="xs:double" to="xs:string">
+                <varRef name="viewboxShift" slot="1"/>
+               </convert>
+               <str val=")"/>
+              </fn>
+             </att>
+             <elem line="105" name="polygon" nsuri="http://www.w3.org/2000/svg" flags="d">
+              <sequence>
+               <att name="points">
+                <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" name="Q{http://saxon.sf.net/generated-variable}gg766029588" bSlot="14"/>
+               </att>
+               <att name="id">
+                <str val="big-triangle-1"/>
+               </att>
+               <att name="stroke">
+                <gVarRef name="Q{}shapeStroke" bSlot="15"/>
+               </att>
+               <att name="fill">
+                <gVarRef name="Q{}shapeFill" bSlot="16"/>
+               </att>
+              </sequence>
+             </elem>
+             <elem line="109" name="polygon" nsuri="http://www.w3.org/2000/svg" flags="d">
+              <sequence>
+               <att name="points">
+                <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" name="Q{http://saxon.sf.net/generated-variable}gg2063070760" bSlot="17"/>
+               </att>
+               <att name="id">
+                <str val="big-triangle-2"/>
+               </att>
+               <att name="stroke">
+                <gVarRef name="Q{}shapeStroke" bSlot="18"/>
+               </att>
+               <att name="fill">
+                <gVarRef name="Q{}shapeFill" bSlot="19"/>
+               </att>
+              </sequence>
+             </elem>
+             <elem line="113" name="polygon" nsuri="http://www.w3.org/2000/svg" flags="d">
+              <sequence>
+               <att name="points">
+                <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" name="Q{http://saxon.sf.net/generated-variable}gg1947371169" bSlot="20"/>
+               </att>
+               <att name="id">
+                <str val="medium-triangle"/>
+               </att>
+               <att name="stroke">
+                <gVarRef name="Q{}shapeStroke" bSlot="21"/>
+               </att>
+               <att name="fill">
+                <gVarRef name="Q{}shapeFill" bSlot="22"/>
+               </att>
+              </sequence>
+             </elem>
+             <elem line="117" name="polygon" nsuri="http://www.w3.org/2000/svg" flags="d">
+              <sequence>
+               <att name="points">
+                <str val="0,0 100,0 0,100"/>
+               </att>
+               <att name="id">
+                <str val="small-triangle-1"/>
+               </att>
+               <att name="stroke">
+                <gVarRef name="Q{}shapeStroke" bSlot="23"/>
+               </att>
+               <att name="fill">
+                <gVarRef name="Q{}shapeFill" bSlot="24"/>
+               </att>
+              </sequence>
+             </elem>
+             <elem line="121" name="polygon" nsuri="http://www.w3.org/2000/svg" flags="d">
+              <sequence>
+               <att name="points">
+                <str val="0,0 100,0 0,100"/>
+               </att>
+               <att name="id">
+                <str val="small-triangle-2"/>
+               </att>
+               <att name="stroke">
+                <gVarRef name="Q{}shapeStroke" bSlot="25"/>
+               </att>
+               <att name="fill">
+                <gVarRef name="Q{}shapeFill" bSlot="26"/>
+               </att>
+              </sequence>
+             </elem>
+             <elem line="126" name="polygon" nsuri="http://www.w3.org/2000/svg" flags="d">
+              <sequence>
+               <att name="points">
+                <str val="0,0 0,100 100,100, 100,0"/>
+               </att>
+               <att name="id">
+                <str val="square"/>
+               </att>
+               <att name="stroke">
+                <gVarRef name="Q{}shapeStroke" bSlot="27"/>
+               </att>
+               <att name="fill">
+                <gVarRef name="Q{}shapeFill" bSlot="28"/>
+               </att>
+              </sequence>
+             </elem>
+             <elem line="131" name="polygon" nsuri="http://www.w3.org/2000/svg" flags="d">
+              <sequence>
+               <att name="points">
+                <gVarRef ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" name="Q{http://saxon.sf.net/generated-variable}gg786515096" bSlot="29"/>
+               </att>
+               <att name="id">
+                <str val="parallelogram"/>
+               </att>
+               <att name="stroke">
+                <gVarRef name="Q{}shapeStroke" bSlot="30"/>
+               </att>
+               <att name="fill">
+                <gVarRef name="Q{}shapeFill" bSlot="31"/>
+               </att>
+              </sequence>
+             </elem>
+            </sequence>
+           </elem>
+          </sequence>
+         </let>
+        </sequence>
+       </elem>
+      </doc>
+      <withParam name="settings" flags="t" as="document-node()">
+       <varRef line="138" name="settings" slot="0"/>
+      </withParam>
+     </applyT>
+    </check>
+   </treat>
+  </function>
+ </co>
+ <co id="30" vis="PUBLIC" binds="">
+  <globalParam name="Q{}gridLineStroke" type="xs:string" line="0" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <str val="yellow"/>
+  </globalParam>
+ </co>
+ <co id="18" binds="">
+  <function name="Q{http://www.masereeuw.nl/tangram}get-fill-colour-for-id" line="142" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" eval="8" flags="pU" as="xs:string?" slots="3">
+   <arg name="settings" as="document-node()"/>
+   <arg name="id" as="xs:string"/>
+   <let role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="145" var="colour" as="element(Q{}colour)?" slot="2" eval="7">
+    <check card="?" diag="3|0|XTTE0570|colour">
+     <filter flags="">
+      <slash>
+       <slash>
+        <slash simple="1">
+         <varRef name="settings" slot="0"/>
+         <axis name="child" nodeTest="element(Q{}tangramsettings)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='tangramsettings';"/>
+        </slash>
+        <axis name="child" nodeTest="element(Q{}fill-colours)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='fill-colours';"/>
+       </slash>
+       <axis name="child" nodeTest="element(Q{}colour)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='colour';"/>
+      </slash>
+      <vc op="eq" comp="CCC">
+       <data>
+        <axis name="attribute" nodeTest="attribute(Q{}for-id)" jsTest="return item.name=='for-id'"/>
+       </data>
+       <varRef name="id" slot="1"/>
+      </vc>
+     </filter>
+    </check>
+    <cvUntyped line="146" to="xs:string">
+     <cast as="xs:untypedAtomic" emptiable="0">
+      <fn name="string">
+       <choose>
+        <fn name="exists">
+         <varRef name="colour" slot="2"/>
+        </fn>
+        <fn name="string">
+         <varRef name="colour" slot="2"/>
+        </fn>
+       </choose>
+      </fn>
+     </cast>
+    </cvUntyped>
+   </let>
+  </function>
+ </co>
+ <co id="3" binds="">
+  <globalVariable name="Q{}small-triangle-center" type="xs:double" line="74" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <dbl val="25"/>
+  </globalVariable>
+ </co>
+ <co id="37" binds="">
+  <globalVariable name="Q{}basic-shape-map" type="map(xs:string, xs:string)" line="253" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="if (typeof val == 'object') {return val;} else {throw SaxonJS.XError('Cannot convert supplied JS value to a map or array');}" jsCardCheck="function c(n) {return n==1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="255" as="map(xs:string, xs:string)" jsTest="function k(item) {return SaxonJS.U.Atomic.string.matches(item);};function v(item) {return SaxonJS.U.Atomic.string.matches(item);};function c(n) {return n==1;};return SaxonJS.U.isMap(item) &amp;&amp; item.conforms(k, v, c);" diag="3|0|XTTE0570|basic-shape-map">
+    <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:create" type="map(*)">
+     <sequence>
+      <ifCall name="map:entry" type="map(*)">
+       <str val="black-tangram"/>
+       <str val="tangram"/>
+      </ifCall>
+      <ifCall line="256" name="map:entry" type="map(*)">
+       <str val="coloured-tangram"/>
+       <str val="tangram"/>
+      </ifCall>
+      <ifCall line="257" name="map:entry" type="map(*)">
+       <str val="blue-tangram"/>
+       <str val="tangram"/>
+      </ifCall>
+      <ifCall line="258" name="map:entry" type="map(*)">
+       <str val="transparant-tangram"/>
+       <str val="tangram"/>
+      </ifCall>
+      <ifCall line="259" name="map:entry" type="map(*)">
+       <str val="sitting-cat-tangram"/>
+       <str val="sitting-cat"/>
+      </ifCall>
+      <ifCall line="260" name="map:entry" type="map(*)">
+       <str val="bird-tangram"/>
+       <str val="bird"/>
+      </ifCall>
+      <ifCall line="261" name="map:entry" type="map(*)">
+       <str val="tux-tangram"/>
+       <str val="tux"/>
+      </ifCall>
+      <ifCall line="262" name="map:entry" type="map(*)">
+       <str val="runner-tangram"/>
+       <str val="runner"/>
+      </ifCall>
+     </sequence>
+    </ifCall>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="38" binds="8">
+  <globalVariable name="Q{}viewBoxFactor-as-double" type="xs:double" line="62" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <cast vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="62" as="xs:double" emptiable="0">
+    <gVarRef name="Q{}viewBoxFactor" bSlot="0"/>
+   </cast>
+  </globalVariable>
+ </co>
+ <co id="26" binds="39 9">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg107625565" type="xs:string" line="86" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <fn vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="=http://www.w3.org/2000/svg xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="86" name="concat">
+    <str val="width: "/>
+    <fn name="string-join">
+     <convert from="xs:anyAtomicType" to="xs:string">
+      <data>
+       <mergeAdj>
+        <gVarRef name="Q{}svgCSSWidth" bSlot="0"/>
+       </mergeAdj>
+      </data>
+     </convert>
+     <str val=" "/>
+    </fn>
+    <str val="; height: "/>
+    <fn name="string-join">
+     <convert from="xs:anyAtomicType" to="xs:string">
+      <data>
+       <mergeAdj>
+        <gVarRef name="Q{}svgCSSHeight" bSlot="1"/>
+       </mergeAdj>
+      </data>
+     </convert>
+     <str val=" "/>
+    </fn>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="40" binds="15">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg487326515" type="xs:string" line="281" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <fn vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="281" name="string-join">
+    <convert from="xs:anyAtomicType" to="xs:string">
+     <data>
+      <mergeAdj>
+       <gVarRef name="Q{}keyForPreviousFangram" bSlot="0"/>
+      </mergeAdj>
+     </data>
+    </convert>
+    <str val=" "/>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="36" binds="7">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg786515096" type="xs:string" line="131" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <fn vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="=http://www.w3.org/2000/svg xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="131" name="concat">
+    <str val="0,"/>
+    <str val="100"/>
+    <str val=" "/>
+    <str val="100"/>
+    <str val=",0 "/>
+    <convert from="xs:integer" to="xs:string">
+     <gVarRef name="Q{}doubleShortSide" bSlot="0"/>
+    </convert>
+    <str val=",0 "/>
+    <str val="100"/>
+    <str val=","/>
+    <str val="100"/>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="41" binds="42">
+  <globalVariable name="Q{}waitMillisBetweenMoves-as-int" type="xs:integer" line="157" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.integer.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <cast vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="157" as="xs:integer" emptiable="0">
+    <gVarRef name="Q{}waitMillisBetweenMoves" bSlot="0"/>
+   </cast>
+  </globalVariable>
+ </co>
+ <co id="43" binds="15">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg342291987" type="xs:string" line="269" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <fn vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="269" name="string-join">
+    <convert from="xs:anyAtomicType" to="xs:string">
+     <data>
+      <mergeAdj>
+       <gVarRef name="Q{}keyForPreviousFangram" bSlot="0"/>
+      </mergeAdj>
+     </data>
+    </convert>
+    <str val=" "/>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="31" binds="7 7">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg766029588" type="xs:string" line="105" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <fn vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="=http://www.w3.org/2000/svg xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="105" name="concat">
+    <str val="0,0 "/>
+    <convert from="xs:integer" to="xs:string">
+     <gVarRef name="Q{}doubleShortSide" bSlot="0"/>
+    </convert>
+    <str val=",0 0,"/>
+    <convert from="xs:integer" to="xs:string">
+     <gVarRef name="Q{}doubleShortSide" bSlot="1"/>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="44" binds="45 41 46 47 48">
+  <template name="Q{}next-tangram" flags="os" line="374" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" slots="5">
+   <sequence role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="375">
+    <param name="old-transforms" slot="0" flags="r" as="element(Q{}transform)+">
+     <treat role="conversion" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="8|0|XTTE0590|old-transforms">
+      <check card="+" diag="8|0|XTTE0590|old-transforms">
+       <supplied slot="0"/>
+      </check>
+     </treat>
+    </param>
+    <param line="376" name="new-transforms" slot="1" flags="r" as="element(Q{}transform)+">
+     <treat role="conversion" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="8|0|XTTE0590|new-transforms">
+      <check card="+" diag="8|0|XTTE0590|new-transforms">
+       <supplied slot="1"/>
+      </check>
+     </treat>
+    </param>
+    <param line="377" name="settings" slot="2" flags="r" as="document-node()">
+     <treat role="conversion" as="document-node()" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==9||item.nodeType==11);" diag="8|0|XTTE0590|settings">
+      <check card="1" diag="8|0|XTTE0590|settings">
+       <supplied slot="2"/>
+      </check>
+     </treat>
+    </param>
+    <callT line="379" name="on-tangram-start" bSlot="0"/>
+    <forEach line="381">
+     <docOrder intra="1">
+      <filter flags="b">
+       <slash>
+        <slash>
+         <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" name="ixsl:page" type="document-node()?"/>
+         <fn name="key">
+          <str val="Q{http://saxon.sf.net/}kk101"/>
+          <str val="tangram-div"/>
+          <dot type="document-node()"/>
+         </fn>
+        </slash>
+        <axis name="descendant" nodeTest="Q{http://www.w3.org/2000/svg}*" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1&amp;&amp;q.uri == 'http://www.w3.org/2000/svg'"/>
+       </slash>
+       <fn name="exists">
+        <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+       </fn>
+      </filter>
+     </docOrder>
+     <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" line="383" name="ixsl:schedule-action" type="item()*">
+      <arith op="*" calc="i*i">
+       <arith op="*" calc="i*i">
+        <gVarRef name="Q{}waitMillisBetweenMoves-as-int" bSlot="1"/>
+        <arith line="382" op="+" calc="i+i">
+         <fn name="count">
+          <slash simple="1">
+           <dot type="Q{http://www.w3.org/2000/svg}*"/>
+           <axis name="preceding-sibling" nodeTest="element()" jsTest="return item.nodeType==1;"/>
+          </slash>
+         </fn>
+         <int val="1"/>
+        </arith>
+       </arith>
+       <int val="7"/>
+      </arith>
+      <empty/>
+      <callT line="385" name="change-color-for-id" bSlot="2">
+       <withParam name="settings" flags="c" as="document-node()">
+        <varRef line="386" name="settings" slot="2"/>
+       </withParam>
+       <withParam name="id" flags="c" as="xs:string">
+        <fn line="387" name="string">
+         <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+        </fn>
+       </withParam>
+      </callT>
+     </ifCall>
+    </forEach>
+    <let line="392" var="svgObjectsWithId" as="Q{http://www.w3.org/2000/svg}**" slot="3" eval="3">
+     <filter flags="b">
+      <slash simple="1">
+       <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" name="ixsl:page" type="document-node()?"/>
+       <axis name="descendant" nodeTest="Q{http://www.w3.org/2000/svg}*" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1&amp;&amp;q.uri == 'http://www.w3.org/2000/svg'"/>
+      </slash>
+      <fn name="exists">
+       <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+      </fn>
+     </filter>
+     <let line="394" var="transformmap" as="map(xs:string, map(xs:string, xs:double))" slot="4" eval="7">
+      <ufCall name="Q{#local}create-transform-map" tailCall="false" bSlot="3" eval="4 4 4">
+       <varRef name="svgObjectsWithId" slot="3"/>
+       <varRef name="old-transforms" slot="0"/>
+       <varRef name="new-transforms" slot="1"/>
+      </ufCall>
+      <forEach line="396">
+       <varRef name="svgObjectsWithId" slot="3"/>
+       <callT line="398" name="do-moves" bSlot="4">
+        <withParam name="id" flags="c" as="xs:string">
+         <fn line="399" name="string">
+          <axis line="397" name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+         </fn>
+        </withParam>
+        <withParam name="transformmap-for-id" flags="c" as="map(xs:string, xs:double)">
+         <treat line="400" as="map(xs:string, xs:double)" jsTest="function k(item) {return SaxonJS.U.Atomic.string.matches(item);};function v(item) {return SaxonJS.U.Atomic.double.matches(item);};function c(n) {return n==1;};return SaxonJS.U.isMap(item) &amp;&amp; item.conforms(k, v, c);" diag="8|0|XTTE0590|transformmap-for-id">
+          <check card="1" diag="8|0|XTTE0590|transformmap-for-id">
+           <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+            <varRef name="transformmap" slot="4"/>
+            <fn name="string">
+             <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+            </fn>
+           </ifCall>
+          </check>
+         </treat>
+        </withParam>
+        <withParam name="svgobject" flags="c" as="element()">
+         <dot line="401" type="Q{http://www.w3.org/2000/svg}*"/>
+        </withParam>
+        <withParam name="iteration-count" flags="c" as="xs:integer">
+         <int val="1"/>
+        </withParam>
+       </callT>
+      </forEach>
+     </let>
+    </let>
+   </sequence>
+  </template>
+ </co>
+ <co id="49" binds="">
+  <mode onNo="TC" flags="dW" patternSlots="0"/>
+ </co>
+ <co id="2" binds="11">
+  <globalVariable name="Q{}medium-triangle-center" type="xs:double" line="75" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <arith vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="75" op="div" calc="d/d">
+    <gVarRef name="Q{}singleLongSide" bSlot="0"/>
+    <int val="4"/>
+   </arith>
+  </globalVariable>
+ </co>
+ <co id="33" vis="PUBLIC" binds="">
+  <globalParam name="Q{}shapeFill" type="xs:string" line="0" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <str val="none"/>
+  </globalParam>
+ </co>
+ <co id="39" vis="PUBLIC" binds="">
+  <globalParam name="Q{}svgCSSWidth" type="item()*" line="0" visibility="PUBLIC" jsAcceptor="return val;" jsCardCheck="function c() {return true;};">
+   <str val="100%"/>
+  </globalParam>
+ </co>
+ <co id="50" binds="51">
+  <function name="Q{#local}create-transform-entrymap" line="329" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" eval="7" flags="pU" as="map(xs:string, xs:double)" slots="11">
+   <arg name="svgObjectId" as="xs:string"/>
+   <arg name="old-transforms" as="element(Q{}transform)+"/>
+   <arg name="new-transforms" as="element(Q{}transform)+"/>
+   <let role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="334" var="old-transform" as="element(Q{}transform)" slot="3" eval="7">
+    <check card="1" diag="3|0|XTTE0570|old-transform">
+     <docOrder intra="0">
+      <filter flags="">
+       <slash>
+        <varRef name="old-transforms" slot="1"/>
+        <axis name="self" nodeTest="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';"/>
+       </slash>
+       <vc op="eq" comp="CCC">
+        <data>
+         <axis name="attribute" nodeTest="attribute(Q{}for-id)" jsTest="return item.name=='for-id'"/>
+        </data>
+        <varRef name="svgObjectId" slot="0"/>
+       </vc>
+      </filter>
+     </docOrder>
+    </check>
+    <let line="335" var="new-transform" as="element(Q{}transform)" slot="4" eval="7">
+     <check card="1" diag="3|0|XTTE0570|new-transform">
+      <docOrder intra="0">
+       <filter flags="">
+        <slash>
+         <varRef name="new-transforms" slot="2"/>
+         <axis name="self" nodeTest="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';"/>
+        </slash>
+        <vc op="eq" comp="CCC">
+         <data>
+          <axis name="attribute" nodeTest="attribute(Q{}for-id)" jsTest="return item.name=='for-id'"/>
+         </data>
+         <varRef name="svgObjectId" slot="0"/>
+        </vc>
+       </filter>
+      </docOrder>
+     </check>
+     <treat line="337" as="map(xs:string, xs:double)" jsTest="function k(item) {return SaxonJS.U.Atomic.string.matches(item);};function v(item) {return SaxonJS.U.Atomic.double.matches(item);};function c(n) {return n==1;};return SaxonJS.U.isMap(item) &amp;&amp; item.conforms(k, v, c);" diag="5|0|XTTE0780|local:create-transform-entrymap">
+      <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:create" type="map(*)">
+       <let var="vv:loc562072071" as="attribute()*" indexable="true" slot="5" eval="3">
+        <slash line="340" simple="1">
+         <varRef name="new-transform" slot="4"/>
+         <axis name="attribute" nodeTest="attribute()" jsTest="return SaxonJS.U.isAttr(item)"/>
+        </slash>
+        <let var="vv:loc989109859" as="attribute()*" indexable="true" slot="6" eval="3">
+         <slash line="339" simple="1">
+          <varRef name="old-transform" slot="3"/>
+          <axis name="attribute" nodeTest="attribute()" jsTest="return SaxonJS.U.isAttr(item)"/>
+         </slash>
+         <forEach>
+          <filter flags="b">
+           <slash simple="1">
+            <varRef name="new-transform" slot="4"/>
+            <axis name="attribute" nodeTest="attribute()" jsTest="return SaxonJS.U.isAttr(item)"/>
+           </slash>
+           <vc op="ne" comp="CCC">
+            <fn name="local-name">
+             <dot type="attribute()"/>
+            </fn>
+            <str val="for-id"/>
+           </vc>
+          </filter>
+          <let line="338" var="key" as="xs:string" slot="7" eval="8">
+           <fn name="local-name">
+            <dot type="attribute()"/>
+           </fn>
+           <let line="339" var="old-value" as="xs:string" slot="8" eval="7">
+            <check card="1" diag="3|0|XTTE0570|old-value">
+             <cvUntyped to="xs:string">
+              <data>
+               <indexedFilter line="337" use="left">
+                <varRef name="vv:loc989109859" slot="6"/>
+                <vc line="339" op="eq" comp="CCC">
+                 <fn name="local-name">
+                  <dot type="attribute()"/>
+                 </fn>
+                 <varRef name="key" slot="7"/>
+                </vc>
+               </indexedFilter>
+              </data>
+             </cvUntyped>
+            </check>
+            <let line="342" var="org-key" as="xs:string" slot="9" eval="8">
+             <fn name="concat">
+              <fn name="local-name">
+               <dot type="attribute()"/>
+              </fn>
+              <str val=".org"/>
+             </fn>
+             <let line="343" var="key-value" as="xs:double" slot="10" eval="7">
+              <arith op="-" calc="d-d">
+               <cast as="xs:double" emptiable="0">
+                <check line="340" card="1" diag="3|0|XTTE0570|new-value">
+                 <cvUntyped to="xs:string">
+                  <data>
+                   <indexedFilter line="337" use="left">
+                    <varRef name="vv:loc562072071" slot="5"/>
+                    <vc line="340" op="eq" comp="CCC">
+                     <fn name="local-name">
+                      <dot type="attribute()"/>
+                     </fn>
+                     <varRef name="key" slot="7"/>
+                    </vc>
+                   </indexedFilter>
+                  </data>
+                 </cvUntyped>
+                </check>
+               </cast>
+               <cast as="xs:double" emptiable="0">
+                <varRef name="old-value" slot="8"/>
+               </cast>
+              </arith>
+              <sequence line="344">
+               <ifCall name="map:entry" type="map(*)">
+                <varRef name="org-key" slot="9"/>
+                <cast as="xs:double" emptiable="0">
+                 <varRef name="old-value" slot="8"/>
+                </cast>
+               </ifCall>
+               <ifCall line="345" name="map:entry" type="map(*)">
+                <varRef name="key" slot="7"/>
+                <arith op="div" calc="d/d">
+                 <varRef name="key-value" slot="10"/>
+                 <gVarRef name="Q{}moveIterations-as-int" bSlot="0"/>
+                </arith>
+               </ifCall>
+              </sequence>
+             </let>
+            </let>
+           </let>
+          </let>
+         </forEach>
+        </let>
+       </let>
+      </ifCall>
+     </treat>
+    </let>
+   </let>
+  </function>
+ </co>
+ <co id="35" binds="11 11">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg1947371169" type="xs:string" line="113" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <fn vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="=http://www.w3.org/2000/svg xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="113" name="concat">
+    <str val="0,0 "/>
+    <convert from="xs:double" to="xs:string">
+     <gVarRef name="Q{}singleLongSide" bSlot="0"/>
+    </convert>
+    <str val=",0 0,"/>
+    <convert from="xs:double" to="xs:string">
+     <gVarRef name="Q{}singleLongSide" bSlot="1"/>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="46" binds="18 17">
+  <template name="Q{}change-color-for-id" flags="os" line="407" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" slots="2">
+   <sequence role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="408">
+    <param name="settings" slot="0" flags="r" as="document-node()">
+     <treat role="conversion" as="document-node()" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; (item.nodeType==9||item.nodeType==11);" diag="8|0|XTTE0590|settings">
+      <check card="1" diag="8|0|XTTE0590|settings">
+       <supplied slot="0"/>
+      </check>
+     </treat>
+    </param>
+    <param line="409" name="id" slot="1" flags="r" as="xs:string">
+     <treat role="conversion" as="xs:string" jsTest="return SaxonJS.U.Atomic.string.matches(item);" diag="8|0|XTTE0590|id">
+      <check card="1" diag="8|0|XTTE0590|id">
+       <cvUntyped to="xs:string">
+        <data>
+         <supplied slot="1"/>
+        </data>
+       </cvUntyped>
+      </check>
+     </treat>
+    </param>
+    <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" line="410" name="ixsl:set-attribute" type="item()*">
+     <str val="fill"/>
+     <check card="1" diag="0|1||ixsl:set-attribute">
+      <ufCall name="Q{http://www.masereeuw.nl/tangram}get-fill-colour-for-id" tailCall="false" bSlot="0" eval="6 6">
+       <varRef name="settings" slot="0"/>
+       <varRef name="id" slot="1"/>
+      </ufCall>
+     </check>
+    </ifCall>
+    <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" line="411" name="ixsl:set-attribute" type="item()*">
+     <str val="stroke"/>
+     <check card="1" diag="0|1||ixsl:set-attribute">
+      <ufCall name="Q{http://www.masereeuw.nl/tangram}get-stroke-colour-for-id" tailCall="false" bSlot="1" eval="6 6">
+       <varRef name="settings" slot="0"/>
+       <varRef name="id" slot="1"/>
+      </ufCall>
+     </check>
+    </ifCall>
+   </sequence>
+  </template>
+ </co>
+ <co id="47" binds="50">
+  <function name="Q{#local}create-transform-map" line="313" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" eval="7" flags="pU" as="map(xs:string, map(xs:string, xs:double))" slots="4">
+   <arg name="svgObjectsWithId" as="element()*"/>
+   <arg name="old-transforms" as="element(Q{}transform)+"/>
+   <arg name="new-transforms" as="element(Q{}transform)+"/>
+   <treat role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="319" as="map(xs:string, map(xs:string, xs:double))" jsTest="function k(item) {return SaxonJS.U.Atomic.string.matches(item);};function v(item) {function k(item) {return SaxonJS.U.Atomic.string.matches(item);};function v(item) {return SaxonJS.U.Atomic.double.matches(item);};function c(n) {return n==1;};return SaxonJS.U.isMap(item) &amp;&amp; item.conforms(k, v, c);};function c(n) {return n==1;};return SaxonJS.U.isMap(item) &amp;&amp; item.conforms(k, v, c);" diag="5|0|XTTE0780|local:create-transform-map">
+    <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:create" type="map(*)">
+     <forEach>
+      <varRef name="svgObjectsWithId" slot="0"/>
+      <let line="320" var="svgObject" as="element()" slot="3" eval="7">
+       <dot type="element()"/>
+       <ifCall line="321" name="map:entry" type="map(*)">
+        <fn name="string">
+         <slash simple="1">
+          <varRef name="svgObject" slot="3"/>
+          <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+         </slash>
+        </fn>
+        <ufCall name="Q{#local}create-transform-entrymap" tailCall="false" bSlot="0" eval="7 4 4">
+         <check card="1" diag="0|0||local:create-transform-entrymap">
+          <cvUntyped to="xs:string">
+           <data>
+            <slash simple="1">
+             <varRef name="svgObject" slot="3"/>
+             <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+            </slash>
+           </data>
+          </cvUntyped>
+         </check>
+         <varRef name="old-transforms" slot="1"/>
+         <varRef name="new-transforms" slot="2"/>
+        </ufCall>
+       </ifCall>
+      </let>
+     </forEach>
+    </ifCall>
+   </treat>
+  </function>
+ </co>
+ <co id="4" binds="">
+  <globalVariable name="Q{}square-center" type="xs:double" line="77" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <dbl val="50"/>
+  </globalVariable>
+ </co>
+ <co id="52" vis="PUBLIC" binds="">
+  <globalParam name="Q{}initialColours" type="xs:string" line="0" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <str val="black-tangram.xml"/>
+  </globalParam>
+ </co>
+ <co id="17" binds="">
+  <function name="Q{http://www.masereeuw.nl/tangram}get-stroke-colour-for-id" line="149" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" eval="8" flags="pU" as="xs:string?" slots="3">
+   <arg name="settings" as="document-node()"/>
+   <arg name="id" as="xs:string"/>
+   <let role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="152" var="colour" as="element(Q{}colour)?" slot="2" eval="7">
+    <check card="?" diag="3|0|XTTE0570|colour">
+     <filter flags="">
+      <slash>
+       <slash>
+        <slash simple="1">
+         <varRef name="settings" slot="0"/>
+         <axis name="child" nodeTest="element(Q{}tangramsettings)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='tangramsettings';"/>
+        </slash>
+        <axis name="child" nodeTest="element(Q{}stroke-colours)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='stroke-colours';"/>
+       </slash>
+       <axis name="child" nodeTest="element(Q{}colour)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='colour';"/>
+      </slash>
+      <vc op="eq" comp="CCC">
+       <data>
+        <axis name="attribute" nodeTest="attribute(Q{}for-id)" jsTest="return item.name=='for-id'"/>
+       </data>
+       <varRef name="id" slot="1"/>
+      </vc>
+     </filter>
+    </check>
+    <cvUntyped line="153" to="xs:string">
+     <cast as="xs:untypedAtomic" emptiable="0">
+      <fn name="string">
+       <choose>
+        <fn name="exists">
+         <varRef name="colour" slot="2"/>
+        </fn>
+        <fn name="string">
+         <varRef name="colour" slot="2"/>
+        </fn>
+       </choose>
+      </fn>
+     </cast>
+    </cvUntyped>
+   </let>
+  </function>
+ </co>
+ <co id="51" binds="53">
+  <globalVariable name="Q{}moveIterations-as-int" type="xs:integer" line="156" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.integer.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <cast vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="156" as="xs:integer" emptiable="0">
+    <gVarRef name="Q{}moveIterations" bSlot="0"/>
+   </cast>
+  </globalVariable>
+ </co>
+ <co id="54" binds="45 43 55 56 57 52">
+  <template name="Q{}initialize" flags="os" line="267" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" slots="0">
+   <sequence role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="268">
+    <callT name="on-tangram-start" bSlot="0"/>
+    <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" line="269" name="ixsl:set-property" type="item()*">
+     <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg342291987" bSlot="1"/>
+     <gVarRef name="Q{}initialShape" bSlot="2"/>
+     <check card="1" diag="0|2||ixsl:set-property">
+      <ifCall name="ixsl:page" type="document-node()?"/>
+     </check>
+    </ifCall>
+    <callT line="271" name="initial-tangram" bSlot="3">
+     <withParam name="initial-transforms" flags="c" as="element(Q{}transform)+">
+      <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg1393221755" bSlot="4"/>
+     </withParam>
+     <withParam name="settings" flags="c" as="xs:string">
+      <gVarRef line="273" name="Q{}initialColours" bSlot="5"/>
+     </withParam>
+    </callT>
+   </sequence>
+  </template>
+ </co>
+ <co id="45" binds="">
+  <template name="Q{}on-tangram-start" flags="os" line="463" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" slots="0">
+   <forEach role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="465">
+    <filter flags="b">
+     <slash simple="1">
+      <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" name="ixsl:page" type="document-node()?"/>
+      <axis name="descendant" nodeTest="*:input" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1&amp;&amp;q.local == 'input'"/>
+     </slash>
+     <fn name="exists">
+      <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+     </fn>
+    </filter>
+    <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" name="ixsl:set-attribute" type="item()*">
+     <str val="disabled"/>
+     <str val="disabled"/>
+    </ifCall>
+   </forEach>
+  </template>
+ </co>
+ <co id="55" vis="PUBLIC" binds="">
+  <globalParam name="Q{}initialShape" type="xs:string" line="0" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <str val="blue-tangram"/>
+  </globalParam>
+ </co>
+ <co id="28" binds="58">
+  <globalVariable name="Q{}gridSize-as-int" type="xs:integer" line="61" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.integer.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <cast vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="61" as="xs:integer" emptiable="0">
+    <gVarRef name="Q{}gridSize" bSlot="0"/>
+   </cast>
+  </globalVariable>
+ </co>
+ <co id="34" binds="7 7">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg2063070760" type="xs:string" line="109" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <fn vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="=http://www.w3.org/2000/svg xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="109" name="concat">
+    <str val="0,0 "/>
+    <convert from="xs:integer" to="xs:string">
+     <gVarRef name="Q{}doubleShortSide" bSlot="0"/>
+    </convert>
+    <str val=",0 0,"/>
+    <convert from="xs:integer" to="xs:string">
+     <gVarRef name="Q{}doubleShortSide" bSlot="1"/>
+    </convert>
+   </fn>
+  </globalVariable>
+ </co>
+ <co id="21" binds="1 1 1 1 2 2 3 3 3 3 5 6">
+  <globalVariable name="Q{}bird-transforms" type="element(Q{}transform)+" line="189" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="function test(item) {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {function a() {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};function b() {return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1;};return a()&amp;&amp;b();};return a()&amp;&amp;b();};if (test(val)) {return val;} else {throw SaxonJS.XError('Conversion failed', 'XTTE0590');}" jsCardCheck="function c(n) {return n&gt;=1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="190" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="3|0|XTTE0570|bird-transforms">
+    <sequence>
+     <elem name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="0"/>
+       </att>
+       <att name="translate-y">
+        <str val="0"/>
+       </att>
+       <att name="rotate-r">
+        <str val="180"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="0"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="1"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="191" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="big-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="120"/>
+       </att>
+       <att name="translate-y">
+        <str val="-9"/>
+       </att>
+       <att name="rotate-r">
+        <str val="135"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="2"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}big-triangle-center" bSlot="3"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="192" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="medium-triangle"/>
+       </att>
+       <att name="translate-x">
+        <str val="220"/>
+       </att>
+       <att name="translate-y">
+        <str val="-50"/>
+       </att>
+       <att name="rotate-r">
+        <str val="90"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="4"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}medium-triangle-center" bSlot="5"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="193" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-1"/>
+       </att>
+       <att name="translate-x">
+        <str val="340"/>
+       </att>
+       <att name="translate-y">
+        <str val="90"/>
+       </att>
+       <att name="rotate-r">
+        <str val="90"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="6"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="7"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="194" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="small-triangle-2"/>
+       </att>
+       <att name="translate-x">
+        <str val="100"/>
+       </att>
+       <att name="translate-y">
+        <str val="168"/>
+       </att>
+       <att name="rotate-r">
+        <str val="45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="8"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}small-triangle-center" bSlot="9"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="195" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="square"/>
+       </att>
+       <att name="translate-x">
+        <str val="290"/>
+       </att>
+       <att name="translate-y">
+        <str val="-8"/>
+       </att>
+       <att name="rotate-r">
+        <str val="0"/>
+       </att>
+       <att name="rotate-x">
+        <str val="0"/>
+       </att>
+       <att name="rotate-y">
+        <str val="0"/>
+       </att>
+       <att name="scale-x">
+        <str val="1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+     <elem line="197" name="transform" namespaces="svg=http://www.w3.org/2000/svg tangram=http://www.masereeuw.nl/tangram">
+      <sequence>
+       <att name="for-id">
+        <str val="parallelogram"/>
+       </att>
+       <att name="translate-x">
+        <str val="-90"/>
+       </att>
+       <att name="translate-y">
+        <str val="85"/>
+       </att>
+       <att name="rotate-r">
+        <str val="45"/>
+       </att>
+       <att name="rotate-x">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-x" bSlot="10"/>
+        </convert>
+       </att>
+       <att name="rotate-y">
+        <convert from="xs:double" to="xs:string">
+         <gVarRef name="Q{}parallelogram-center-y" bSlot="11"/>
+        </convert>
+       </att>
+       <att name="scale-x">
+        <str val="-1"/>
+       </att>
+       <att name="scale-y">
+        <str val="1"/>
+       </att>
+      </sequence>
+     </elem>
+    </sequence>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="53" vis="PUBLIC" binds="">
+  <globalParam name="Q{}moveIterations" type="xs:string" line="0" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <str val="50"/>
+  </globalParam>
+ </co>
+ <co id="27" binds="28">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg1175002195" type="xs:boolean" line="90" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.boolean.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <compareToInt vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="=http://www.w3.org/2000/svg xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="90" op="gt" val="0">
+    <gVarRef name="Q{}gridSize-as-int" bSlot="0"/>
+   </compareToInt>
+  </globalVariable>
+ </co>
+ <co id="48" binds="51 41 48 59">
+  <template name="Q{}do-moves" flags="os" line="415" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" slots="12">
+   <sequence role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="416">
+    <param name="id" slot="0" flags="i" as="xs:string">
+     <treat role="conversion" as="xs:string" jsTest="return SaxonJS.U.Atomic.string.matches(item);" diag="8|0|XTTE0590|id">
+      <check card="1" diag="8|0|XTTE0590|id">
+       <cvUntyped to="xs:string">
+        <data>
+         <supplied slot="0"/>
+        </data>
+       </cvUntyped>
+      </check>
+     </treat>
+    </param>
+    <param line="417" name="transformmap-for-id" slot="1" flags="i" as="map(xs:string, xs:double)">
+     <treat role="conversion" as="map(xs:string, xs:double)" jsTest="function k(item) {return SaxonJS.U.Atomic.string.matches(item);};function v(item) {return SaxonJS.U.Atomic.double.matches(item);};function c(n) {return n==1;};return SaxonJS.U.isMap(item) &amp;&amp; item.conforms(k, v, c);" diag="8|0|XTTE0590|transformmap-for-id">
+      <check card="1" diag="8|0|XTTE0590|transformmap-for-id">
+       <supplied slot="1"/>
+      </check>
+     </treat>
+    </param>
+    <param line="418" name="svgobject" slot="2" flags="r" as="element()">
+     <treat role="conversion" as="element()" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1;" diag="8|0|XTTE0590|svgobject">
+      <check card="1" diag="8|0|XTTE0590|svgobject">
+       <supplied slot="2"/>
+      </check>
+     </treat>
+    </param>
+    <param line="419" name="iteration-count" slot="3" flags="r" as="xs:integer">
+     <treat role="conversion" as="xs:integer" jsTest="return SaxonJS.U.Atomic.integer.matches(item);" diag="8|0|XTTE0590|iteration-count">
+      <check card="1" diag="8|0|XTTE0590|iteration-count">
+       <cvUntyped to="xs:integer">
+        <data>
+         <supplied slot="3"/>
+        </data>
+       </cvUntyped>
+      </check>
+     </treat>
+    </param>
+    <let line="421" var="translate-x" as="xs:double" slot="4" eval="7">
+     <check card="1" diag="3|0|XTTE0570|translate-x">
+      <convert from="xs:anyAtomicType" to="xs:double" flags="p">
+       <cvUntyped to="xs:double">
+        <arith op="+" calc="a+a">
+         <cvUntyped to="xs:double">
+          <atomSing card="?" diag="1|0||+">
+           <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+            <varRef name="transformmap-for-id" slot="1"/>
+            <str val="translate-x.org"/>
+           </ifCall>
+          </atomSing>
+         </cvUntyped>
+         <cvUntyped to="xs:double">
+          <arith op="*" calc="a*a">
+           <varRef name="iteration-count" slot="3"/>
+           <cvUntyped to="xs:double">
+            <atomSing card="?" diag="1|1||*">
+             <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+              <varRef name="transformmap-for-id" slot="1"/>
+              <str val="translate-x"/>
+             </ifCall>
+            </atomSing>
+           </cvUntyped>
+          </arith>
+         </cvUntyped>
+        </arith>
+       </cvUntyped>
+      </convert>
+     </check>
+     <let line="422" var="translate-y" as="xs:double" slot="5" eval="7">
+      <check card="1" diag="3|0|XTTE0570|translate-y">
+       <convert from="xs:anyAtomicType" to="xs:double" flags="p">
+        <cvUntyped to="xs:double">
+         <arith op="+" calc="a+a">
+          <cvUntyped to="xs:double">
+           <atomSing card="?" diag="1|0||+">
+            <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+             <varRef name="transformmap-for-id" slot="1"/>
+             <str val="translate-y.org"/>
+            </ifCall>
+           </atomSing>
+          </cvUntyped>
+          <cvUntyped to="xs:double">
+           <arith op="*" calc="a*a">
+            <varRef name="iteration-count" slot="3"/>
+            <cvUntyped to="xs:double">
+             <atomSing card="?" diag="1|1||*">
+              <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+               <varRef name="transformmap-for-id" slot="1"/>
+               <str val="translate-y"/>
+              </ifCall>
+             </atomSing>
+            </cvUntyped>
+           </arith>
+          </cvUntyped>
+         </arith>
+        </cvUntyped>
+       </convert>
+      </check>
+      <let line="423" var="rotate-r" as="xs:double" slot="6" eval="7">
+       <check card="1" diag="3|0|XTTE0570|rotate-r">
+        <convert from="xs:anyAtomicType" to="xs:double" flags="p">
+         <cvUntyped to="xs:double">
+          <arith op="+" calc="a+a">
+           <cvUntyped to="xs:double">
+            <atomSing card="?" diag="1|0||+">
+             <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+              <varRef name="transformmap-for-id" slot="1"/>
+              <str val="rotate-r.org"/>
+             </ifCall>
+            </atomSing>
+           </cvUntyped>
+           <cvUntyped to="xs:double">
+            <arith op="*" calc="a*a">
+             <varRef name="iteration-count" slot="3"/>
+             <cvUntyped to="xs:double">
+              <atomSing card="?" diag="1|1||*">
+               <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+                <varRef name="transformmap-for-id" slot="1"/>
+                <str val="rotate-r"/>
+               </ifCall>
+              </atomSing>
+             </cvUntyped>
+            </arith>
+           </cvUntyped>
+          </arith>
+         </cvUntyped>
+        </convert>
+       </check>
+       <let line="424" var="rotate-x" as="xs:double" slot="7" eval="7">
+        <check card="1" diag="3|0|XTTE0570|rotate-x">
+         <convert from="xs:anyAtomicType" to="xs:double" flags="p">
+          <cvUntyped to="xs:double">
+           <arith op="+" calc="a+a">
+            <cvUntyped to="xs:double">
+             <atomSing card="?" diag="1|0||+">
+              <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+               <varRef name="transformmap-for-id" slot="1"/>
+               <str val="rotate-x.org"/>
+              </ifCall>
+             </atomSing>
+            </cvUntyped>
+            <cvUntyped to="xs:double">
+             <arith op="*" calc="a*a">
+              <varRef name="iteration-count" slot="3"/>
+              <cvUntyped to="xs:double">
+               <atomSing card="?" diag="1|1||*">
+                <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+                 <varRef name="transformmap-for-id" slot="1"/>
+                 <str val="rotate-x"/>
+                </ifCall>
+               </atomSing>
+              </cvUntyped>
+             </arith>
+            </cvUntyped>
+           </arith>
+          </cvUntyped>
+         </convert>
+        </check>
+        <let line="425" var="rotate-y" as="xs:double" slot="8" eval="7">
+         <check card="1" diag="3|0|XTTE0570|rotate-y">
+          <convert from="xs:anyAtomicType" to="xs:double" flags="p">
+           <cvUntyped to="xs:double">
+            <arith op="+" calc="a+a">
+             <cvUntyped to="xs:double">
+              <atomSing card="?" diag="1|0||+">
+               <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+                <varRef name="transformmap-for-id" slot="1"/>
+                <str val="rotate-y.org"/>
+               </ifCall>
+              </atomSing>
+             </cvUntyped>
+             <cvUntyped to="xs:double">
+              <arith op="*" calc="a*a">
+               <varRef name="iteration-count" slot="3"/>
+               <cvUntyped to="xs:double">
+                <atomSing card="?" diag="1|1||*">
+                 <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+                  <varRef name="transformmap-for-id" slot="1"/>
+                  <str val="rotate-y"/>
+                 </ifCall>
+                </atomSing>
+               </cvUntyped>
+              </arith>
+             </cvUntyped>
+            </arith>
+           </cvUntyped>
+          </convert>
+         </check>
+         <let line="426" var="scale-x" as="xs:double" slot="9" eval="7">
+          <check card="1" diag="3|0|XTTE0570|scale-x">
+           <convert from="xs:anyAtomicType" to="xs:double" flags="p">
+            <cvUntyped to="xs:double">
+             <arith op="+" calc="a+a">
+              <cvUntyped to="xs:double">
+               <atomSing card="?" diag="1|0||+">
+                <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+                 <varRef name="transformmap-for-id" slot="1"/>
+                 <str val="scale-x.org"/>
+                </ifCall>
+               </atomSing>
+              </cvUntyped>
+              <cvUntyped to="xs:double">
+               <arith op="*" calc="a*a">
+                <varRef name="iteration-count" slot="3"/>
+                <cvUntyped to="xs:double">
+                 <atomSing card="?" diag="1|1||*">
+                  <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+                   <varRef name="transformmap-for-id" slot="1"/>
+                   <str val="scale-x"/>
+                  </ifCall>
+                 </atomSing>
+                </cvUntyped>
+               </arith>
+              </cvUntyped>
+             </arith>
+            </cvUntyped>
+           </convert>
+          </check>
+          <let line="427" var="scale-y" as="xs:double" slot="10" eval="7">
+           <check card="1" diag="3|0|XTTE0570|scale-y">
+            <convert from="xs:anyAtomicType" to="xs:double" flags="p">
+             <cvUntyped to="xs:double">
+              <arith op="+" calc="a+a">
+               <cvUntyped to="xs:double">
+                <atomSing card="?" diag="1|0||+">
+                 <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+                  <varRef name="transformmap-for-id" slot="1"/>
+                  <str val="scale-y.org"/>
+                 </ifCall>
+                </atomSing>
+               </cvUntyped>
+               <cvUntyped to="xs:double">
+                <arith op="*" calc="a*a">
+                 <varRef name="iteration-count" slot="3"/>
+                 <cvUntyped to="xs:double">
+                  <atomSing card="?" diag="1|1||*">
+                   <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+                    <varRef name="transformmap-for-id" slot="1"/>
+                    <str val="scale-y"/>
+                   </ifCall>
+                  </atomSing>
+                 </cvUntyped>
+                </arith>
+               </cvUntyped>
+              </arith>
+             </cvUntyped>
+            </convert>
+           </check>
+           <sequence line="429">
+            <let var="vv:loc1048160495" as="xs:string" slot="11" eval="8">
+             <fn line="435" name="concat">
+              <fn name="concat">
+               <fn name="concat">
+                <fn name="concat">
+                 <fn name="concat">
+                  <fn name="concat">
+                   <fn name="concat">
+                    <fn name="concat">
+                     <fn name="concat">
+                      <fn name="concat">
+                       <fn name="concat">
+                        <fn name="concat">
+                         <fn name="concat">
+                          <fn name="concat">
+                           <fn name="concat">
+                            <fn name="concat">
+                             <str val="scale("/>
+                             <varRef name="scale-x" slot="9"/>
+                            </fn>
+                            <str val=", "/>
+                           </fn>
+                           <varRef name="scale-y" slot="10"/>
+                          </fn>
+                          <str val=") "/>
+                         </fn>
+                         <str val="translate("/>
+                        </fn>
+                        <varRef name="translate-x" slot="4"/>
+                       </fn>
+                       <str val=", "/>
+                      </fn>
+                      <varRef name="translate-y" slot="5"/>
+                     </fn>
+                     <str val=") "/>
+                    </fn>
+                    <str val="rotate("/>
+                   </fn>
+                   <varRef name="rotate-r" slot="6"/>
+                  </fn>
+                  <str val=", "/>
+                 </fn>
+                 <varRef name="rotate-x" slot="7"/>
+                </fn>
+                <str val=", "/>
+               </fn>
+               <varRef name="rotate-y" slot="8"/>
+              </fn>
+              <str val=")"/>
+             </fn>
+             <forEach>
+              <varRef name="svgobject" slot="2"/>
+              <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" line="437" name="ixsl:set-attribute" type="item()*">
+               <str val="transform"/>
+               <varRef line="429" name="vv:loc1048160495" slot="11"/>
+              </ifCall>
+             </forEach>
+            </let>
+            <choose line="441">
+             <vc op="lt" onEmpty="0" comp="CAVC">
+              <varRef name="iteration-count" slot="3"/>
+              <gVarRef name="Q{}moveIterations-as-int" bSlot="0"/>
+             </vc>
+             <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" line="442" name="ixsl:schedule-action" type="item()*">
+              <gVarRef name="Q{}waitMillisBetweenMoves-as-int" bSlot="1"/>
+              <empty/>
+              <callT line="443" name="do-moves" bSlot="2">
+               <withParam name="id" flags="c" as="xs:string">
+                <varRef line="444" name="id" slot="0"/>
+               </withParam>
+               <withParam name="transformmap-for-id" flags="c" as="map(xs:string, xs:double)">
+                <varRef line="445" name="transformmap-for-id" slot="1"/>
+               </withParam>
+               <withParam name="svgobject" flags="c" as="element()">
+                <treat line="446" as="element()" jsTest="return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1;" diag="8|0|XTTE0590|svgobject">
+                 <dot flags="a"/>
+                </treat>
+               </withParam>
+               <withParam name="iteration-count" flags="c" as="xs:integer">
+                <arith line="447" op="+" calc="i+i">
+                 <varRef name="iteration-count" slot="3"/>
+                 <int val="1"/>
+                </arith>
+               </withParam>
+              </callT>
+             </ifCall>
+             <true/>
+             <callT line="452" name="on-tangram-completion" bSlot="3"/>
+            </choose>
+           </sequence>
+          </let>
+         </let>
+        </let>
+       </let>
+      </let>
+     </let>
+    </let>
+   </sequence>
+  </template>
+ </co>
+ <co id="60" binds="11">
+  <globalVariable name="Q{}doubleLongSide" type="xs:double" line="72" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <arith vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="72" op="*" calc="d*d">
+    <gVarRef name="Q{}singleLongSide" bSlot="0"/>
+    <int val="2"/>
+   </arith>
+  </globalVariable>
+ </co>
+ <co id="57" binds="19 55">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg1393221755" type="element(Q{}transform)+" line="272" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="function test(item) {var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';};if (test(val)) {return val;} else {throw SaxonJS.XError('Conversion failed', 'XTTE0590');}" jsCardCheck="function c(n) {return n&gt;=1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="272" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="8|0|XTTE0590|initial-transforms">
+    <check card="+" diag="8|0|XTTE0590|initial-transforms">
+     <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+      <gVarRef name="Q{}transforms-map" bSlot="0"/>
+      <gVarRef name="Q{}initialShape" bSlot="1"/>
+     </ifCall>
+    </check>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="61" binds="15">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg1972231254" type="xs:string" line="279" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <treat vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="279" as="xs:string" jsTest="return SaxonJS.U.Atomic.string.matches(item);" diag="0|1||ixsl:get">
+    <check card="1" diag="0|1||ixsl:get">
+     <cvUntyped to="xs:string">
+      <data>
+       <gVarRef name="Q{}keyForPreviousFangram" bSlot="0"/>
+      </data>
+     </cvUntyped>
+    </check>
+   </treat>
+  </globalVariable>
+ </co>
+ <co id="56" binds="24 13 47 14 48">
+  <template name="Q{}initial-tangram" flags="os" line="350" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" slots="4">
+   <sequence role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="351">
+    <param name="initial-transforms" slot="0" flags="r" as="element(Q{}transform)+">
+     <treat role="conversion" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="8|0|XTTE0590|initial-transforms">
+      <check card="+" diag="8|0|XTTE0590|initial-transforms">
+       <supplied slot="0"/>
+      </check>
+     </treat>
+    </param>
+    <param line="352" name="settings" slot="1" flags="r" as="xs:string">
+     <treat role="conversion" as="xs:string" jsTest="return SaxonJS.U.Atomic.string.matches(item);" diag="8|0|XTTE0590|settings">
+      <check card="1" diag="8|0|XTTE0590|settings">
+       <cvUntyped to="xs:string">
+        <data>
+         <supplied slot="1"/>
+        </data>
+       </cvUntyped>
+      </check>
+     </treat>
+    </param>
+    <resultDoc line="354" global="#&#xA;#Sat Feb 11 00:39:27 CET 2017&#xA;indent=yes&#xA;encoding=UTF-8&#xA;method=xml&#xA;" local="#&#xA;#Sat Feb 11 00:39:27 CET 2017&#xA;method={http\://saxonica.com/ns/interactiveXSLT}replace-content&#xA;">
+     <fn role="href" name="concat">
+      <str val="#"/>
+      <atomSing card="?" diag="0|1||concat">
+       <gVarRef name="Q{}idOfTangramDiv" bSlot="1"/>
+      </atomSing>
+     </fn>
+     <copyOf role="content" line="355" flags="vsc">
+      <ufCall name="Q{http://www.masereeuw.nl/tangram}get-initial-tangram" tailCall="false" bSlot="0" eval="8">
+       <fn name="doc">
+        <varRef name="settings" slot="1"/>
+       </fn>
+      </ufCall>
+     </copyOf>
+    </resultDoc>
+    <let line="358" var="svgObjectsWithId" as="Q{http://www.w3.org/2000/svg}**" slot="2" eval="3">
+     <filter flags="b">
+      <slash simple="1">
+       <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" name="ixsl:page" type="document-node()?"/>
+       <axis name="descendant" nodeTest="Q{http://www.w3.org/2000/svg}*" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1&amp;&amp;q.uri == 'http://www.w3.org/2000/svg'"/>
+      </slash>
+      <fn name="exists">
+       <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+      </fn>
+     </filter>
+     <let line="361" var="transformmap" as="map(xs:string, map(xs:string, xs:double))" slot="3" eval="7">
+      <ufCall name="Q{#local}create-transform-map" tailCall="false" bSlot="2" eval="4 4 4">
+       <varRef name="svgObjectsWithId" slot="2"/>
+       <gVarRef name="Q{}zero-transforms" bSlot="3"/>
+       <varRef name="initial-transforms" slot="0"/>
+      </ufCall>
+      <forEach line="363">
+       <varRef name="svgObjectsWithId" slot="2"/>
+       <callT line="365" name="do-moves" bSlot="4">
+        <withParam name="id" flags="c" as="xs:string">
+         <fn line="366" name="string">
+          <axis line="364" name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+         </fn>
+        </withParam>
+        <withParam name="transformmap-for-id" flags="c" as="map(xs:string, xs:double)">
+         <treat line="367" as="map(xs:string, xs:double)" jsTest="function k(item) {return SaxonJS.U.Atomic.string.matches(item);};function v(item) {return SaxonJS.U.Atomic.double.matches(item);};function c(n) {return n==1;};return SaxonJS.U.isMap(item) &amp;&amp; item.conforms(k, v, c);" diag="8|0|XTTE0590|transformmap-for-id">
+          <check card="1" diag="8|0|XTTE0590|transformmap-for-id">
+           <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+            <varRef name="transformmap" slot="3"/>
+            <fn name="string">
+             <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+            </fn>
+           </ifCall>
+          </check>
+         </treat>
+        </withParam>
+        <withParam name="svgobject" flags="c" as="element()">
+         <dot line="368" type="Q{http://www.w3.org/2000/svg}*"/>
+        </withParam>
+        <withParam name="iteration-count" flags="c" as="xs:integer">
+         <int val="1"/>
+        </withParam>
+       </callT>
+      </forEach>
+     </let>
+    </let>
+   </sequence>
+  </template>
+ </co>
+ <co id="5" binds="">
+  <globalVariable name="Q{}parallelogram-center-x" type="xs:double" line="78" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <dbl val="100"/>
+  </globalVariable>
+ </co>
+ <co id="32" vis="PUBLIC" binds="">
+  <globalParam name="Q{}shapeStroke" type="xs:string" line="0" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <str val="black"/>
+  </globalParam>
+ </co>
+ <co id="29" binds="28">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg1653016014" type="xs:integer*" line="93" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.integer.cast(val);" jsCardCheck="function c() {return true;};">
+   <to vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="=http://www.w3.org/2000/svg xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="93">
+    <int val="0"/>
+    <gVarRef name="Q{}gridSize-as-int" bSlot="0"/>
+   </to>
+  </globalVariable>
+ </co>
+ <co id="58" vis="PUBLIC" binds="">
+  <globalParam name="Q{}gridSize" type="xs:string" line="0" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <str val="0"/>
+  </globalParam>
+ </co>
+ <co id="25" binds="60 38">
+  <globalVariable name="Q{http://saxon.sf.net/generated-variable}gg1515365964" type="xs:double" line="84" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <arith vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="84" op="*" calc="d*d">
+    <gVarRef name="Q{}doubleLongSide" bSlot="0"/>
+    <gVarRef name="Q{}viewBoxFactor-as-double" bSlot="1"/>
+   </arith>
+  </globalVariable>
+ </co>
+ <co id="62" binds="">
+  <globalVariable name="Q{}singleShortSide" type="xs:integer" line="69" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.integer.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <int val="100"/>
+  </globalVariable>
+ </co>
+ <co id="63" binds="61 40 19 37 37 44 14 44 19">
+  <mode name="Q{http://saxonica.com/ns/interactiveXSLT}onclick" onNo="TC" flags="W" patternSlots="0">
+   <templateRule prec="0" prio="0.5" seq="0" rank="0" minImp="0" slots="3" flags="os" line="278" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt">
+    <p.withPredicate role="match">
+     <p.nodeTest test="*:input" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1&amp;&amp;q.local == 'input'"/>
+     <and vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="278" op="and">
+      <vc op="eq" onEmpty="0" comp="CCC">
+       <data>
+        <axis name="attribute" nodeTest="attribute(Q{}type)" jsTest="return item.name=='type'"/>
+       </data>
+       <str val="image"/>
+      </vc>
+      <fn name="exists">
+       <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+      </fn>
+     </and>
+    </p.withPredicate>
+    <let role="action" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="279" var="oldShape" as="xs:string" slot="0" eval="7">
+     <treat as="xs:string" jsTest="return SaxonJS.U.Atomic.string.matches(item);" diag="3|0|XTTE0570|oldShape">
+      <check card="1" diag="3|0|XTTE0570|oldShape">
+       <cvUntyped to="xs:string">
+        <data>
+         <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" name="ixsl:get" type="item()*">
+          <ifCall name="ixsl:page" type="document-node()?"/>
+          <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg1972231254" bSlot="0"/>
+         </ifCall>
+        </data>
+       </cvUntyped>
+      </check>
+     </treat>
+     <let line="280" var="newShape" as="xs:string" slot="1" eval="7">
+      <check card="1" diag="3|0|XTTE0570|newShape">
+       <cvUntyped to="xs:string">
+        <data>
+         <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+        </data>
+       </cvUntyped>
+      </check>
+      <sequence line="281">
+       <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" name="ixsl:set-property" type="item()*">
+        <gVarRef name="Q{http://saxon.sf.net/generated-variable}gg487326515" bSlot="1"/>
+        <varRef name="newShape" slot="1"/>
+        <check card="1" diag="0|2||ixsl:set-property">
+         <ifCall name="ixsl:page" type="document-node()?"/>
+        </check>
+       </ifCall>
+       <message line="285">
+        <fn role="select" name="concat">
+         <fn name="concat">
+          <fn name="concat">
+           <str val="oldShape="/>
+           <varRef name="oldShape" slot="0"/>
+          </fn>
+          <str val=", newShape="/>
+         </fn>
+         <varRef name="newShape" slot="1"/>
+        </fn>
+        <str role="terminate" val="no"/>
+        <str role="error" val="Q{http://www.w3.org/2005/xqt-errors}XTMM9000"/>
+       </message>
+       <let line="288" var="newTransforms" as="element(Q{}transform)+" slot="2" eval="3">
+        <treat as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="3|0|XTTE0570|newTransforms">
+         <check card="+" diag="3|0|XTTE0570|newTransforms">
+          <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+           <gVarRef name="Q{}transforms-map" bSlot="2"/>
+           <varRef name="newShape" slot="1"/>
+          </ifCall>
+         </check>
+        </treat>
+        <choose line="291">
+         <vc op="eq" onEmpty="0" comp="GAC|http://www.w3.org/2005/xpath-functions/collation/codepoint">
+          <atomSing card="?" diag="1|0||eq">
+           <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+            <gVarRef name="Q{}basic-shape-map" bSlot="3"/>
+            <varRef name="oldShape" slot="0"/>
+           </ifCall>
+          </atomSing>
+          <atomSing card="?" diag="1|1||eq">
+           <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+            <gVarRef name="Q{}basic-shape-map" bSlot="4"/>
+            <varRef name="newShape" slot="1"/>
+           </ifCall>
+          </atomSing>
+         </vc>
+         <callT line="294" name="next-tangram" bSlot="5">
+          <withParam name="old-transforms" flags="c" as="element(Q{}transform)+">
+           <gVarRef line="295" name="Q{}zero-transforms" bSlot="6"/>
+          </withParam>
+          <withParam name="new-transforms" flags="c" as="element(Q{}transform)+">
+           <varRef line="296" name="newTransforms" slot="2"/>
+          </withParam>
+          <withParam name="settings" flags="c" as="document-node()">
+           <fn line="297" name="doc">
+            <fn name="concat">
+             <varRef name="newShape" slot="1"/>
+             <str val=".xml"/>
+            </fn>
+           </fn>
+          </withParam>
+         </callT>
+         <true/>
+         <callT line="301" name="next-tangram" bSlot="7">
+          <withParam name="old-transforms" flags="c" as="element(Q{}transform)+">
+           <treat line="287" as="element(Q{}transform)" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1 &amp;&amp; q.uri==''&amp;&amp;q.local=='transform';" diag="3|0|XTTE0570|oldTransforms">
+            <check card="+" diag="3|0|XTTE0570|oldTransforms">
+             <ifCall xmlns:map="http://www.w3.org/2005/xpath-functions/map" name="map:get" type="item()*">
+              <gVarRef name="Q{}transforms-map" bSlot="8"/>
+              <varRef name="oldShape" slot="0"/>
+             </ifCall>
+            </check>
+           </treat>
+          </withParam>
+          <withParam name="new-transforms" flags="c" as="element(Q{}transform)+">
+           <varRef line="303" name="newTransforms" slot="2"/>
+          </withParam>
+          <withParam name="settings" flags="c" as="document-node()">
+           <fn line="304" name="doc">
+            <fn name="concat">
+             <varRef name="newShape" slot="1"/>
+             <str val=".xml"/>
+            </fn>
+           </fn>
+          </withParam>
+         </callT>
+        </choose>
+       </let>
+      </sequence>
+     </let>
+    </let>
+   </templateRule>
+  </mode>
+ </co>
+ <co id="59" binds="">
+  <template name="Q{}on-tangram-completion" flags="os" line="458" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" slots="0">
+   <forEach role="body" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="460">
+    <filter flags="b">
+     <slash simple="1">
+      <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" name="ixsl:page" type="document-node()?"/>
+      <axis name="descendant" nodeTest="*:input" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1&amp;&amp;q.local == 'input'"/>
+     </slash>
+     <fn name="exists">
+      <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+     </fn>
+    </filter>
+    <ifCall xmlns:ixsl="http://saxonica.com/ns/interactiveXSLT" name="ixsl:remove-attribute" type="item()*">
+     <str val="disabled"/>
+     <str val=""/>
+    </ifCall>
+   </forEach>
+  </template>
+ </co>
+ <co id="6" binds="">
+  <globalVariable name="Q{}parallelogram-center-y" type="xs:double" line="79" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <dbl val="50"/>
+  </globalVariable>
+ </co>
+ <co id="12" binds="">
+  <globalVariable name="Q{}SQRT2" type="xs:double" line="64" module="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" visibility="PRIVATE" jsAcceptor="return SaxonJS.U.Atomic.double.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <ifCall xmlns:math="http://www.w3.org/2005/xpath-functions/math" vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="64" name="math:sqrt" type="xs:double?">
+    <dbl val="2"/>
+   </ifCall>
+  </globalVariable>
+ </co>
+ <co id="42" vis="PUBLIC" binds="">
+  <globalParam name="Q{}waitMillisBetweenMoves" type="xs:string" line="0" visibility="PUBLIC" jsAcceptor="return SaxonJS.U.Atomic.string.cast(val);" jsCardCheck="function c(n) {return n==1;};">
+   <str val="50"/>
+  </globalParam>
+ </co>
+ <overridden/>
+ <key name="Q{http://saxon.sf.net/}kk101" line="0" binds="">
+  <p.nodeSet>
+   <axis vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="381" name="descendant" nodeTest="*:div" jsTest="var q=SaxonJS.U.nameOfNode(item); return SaxonJS.U.isNode(item) &amp;&amp; item.nodeType==1&amp;&amp;q.local == 'div'"/>
+  </p.nodeSet>
+  <data vn="31" baseUri="file:/home/pieter/saxonjs-experimenten/tangram2/tangram4saxonjs.xslt" ns="xsl=http://www.w3.org/1999/XSL/Transform svg=http://www.w3.org/2000/svg ixsl=http://saxonica.com/ns/interactiveXSLT xs=http://www.w3.org/2001/XMLSchema math=http://www.w3.org/2005/xpath-functions/math map=http://www.w3.org/2005/xpath-functions/map local=#local tangram=http://www.masereeuw.nl/tangram" line="381">
+   <axis name="attribute" nodeTest="attribute(Q{}id)" jsTest="return item.name=='id'"/>
+  </data>
+ </key>
+ <output>
+  <property name="indent" value="yes"/>
+  <property name="encoding" value="UTF-8"/>
+  <property name="{http://saxon.sf.net/}stylesheet-version" value="30"/>
+  <property name="method" value="xml"/>
+ </output>
+ <decimalFormat decimal-separator="46" grouping-separator="44" digit="35" minus-sign="45" percent="37" per-mille="8240" zero-digit="48" exponent-separator="101" pattern-separator="59" infinity="Infinity" NaN="NaN"/>
+</package>
+<?Σ 4eead3e?>

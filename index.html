@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tangram in XSLT 3.0 with Saxon-JS</title>
+        <style type="text/css">
+            body{
+                font-family: arial, helvetica, sans-serif;
+                font-size: small;
+                margin-left: 4em;
+            }
+            
+            input{
+                width: 6em;
+                height: 6em;
+            }</style>
+        <script type="text/javascript" language="javascript" src="SaxonJS.min.js"></script>
+        <script>
+            /* Possible values for initialShape: black-tangram, coloured-tangram, blue-tangram,
+               transparant-tangram, sitting-cat-tangram, bird-tangram, tux-tangram, runner-tangram,
+               Make sure an XML file with the same name (e.g., black-tangram.xml) is also locally
+               available. It specifies SVG colors and strokes for each tangram object.
+            */
+            window.onload = function() {
+              SaxonJS.transform({
+                 stylesheetLocation: "tangram4saxonjs.sef",
+                 initialTemplate: "initialize",
+                 stylesheetParams: {
+                       initialShape: "black-tangram",
+                       initialColours: "black-tangram.xml",
+                       gridSize: 0,
+                       gridLineStroke: "black",
+                       viewBoxFactor: 3,
+                       moveIterations: 50,
+                       waitMillisBetweenMoves: 50
+                    }
+                 });
+            }     
+      </script>
+    </head>
+
+    <body>
+        <h1>Tangram in XSLT 3.0 with Saxon-JS</h1>
+        <p>(check <a href="http://www.saxonica.com/saxon-js/index.xml">Saxonica's Saxon-JS product page</a></p>
+        <div id="tangram-div" style="width: 20cm; height: 20cm; margin-bottom: 2mm; float: left">
+            <!-- This will contain the tangram SVG image. -->
+        </div>
+        <h2>Alternatives:</h2>
+        <p>
+            <!--<input type="image" src="blue-tangram.png" id="blue-tangram" alt="Blue tangram" title="Build a tangram with blue shapes"/><br/>-->
+            <input type="image" src="coloured-tangram.png" id="coloured-tangram" alt="Coloured tangram" title="Build a multi-coloured tangram"/><br/>
+            <input type="image" src="transparant-tangram.png" id="transparant-tangram" alt="Transparant tangram" title="Build a tangram with transparant shapes"/><br/>
+            <input type="image" src="arrow-tangram.png" id="arrow-tangram" alt="Arrow" title="Tangram arrow"/><br/>
+            <input type="image" src="sitting-cat-tangram.png" id="sitting-cat-tangram" alt="Sitting cat"  title="Build a tangram with a sitting cat"/><br/>
+            <input type="image" src="bird-tangram.png" id="bird-tangram" alt="Bird"  title="Not a dinosaur anymore"/><br/>
+            <input type="image" src="tux-tangram.png" id="tux-tangram" alt="Tux" title="For Linux lovers"/><br/>
+            <input type="image" src="runner-tangram.png" id="runner-tangram" alt="Running man" title="Just a running man"/><br/>
+        </p>
+    </body>
+</html>
